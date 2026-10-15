@@ -1,0 +1,37 @@
+/* Solo lo que Bootstrap no cubre */
+:root {
+    --bs-body-font-family: 'Roboto', sans-serif;
+    --bs-success: #2e7d32;
+    --bs-success-rgb: 46, 125, 50;
+}
+
+html { scroll-padding-top: 90px; } /* anclas no quedan bajo el navbar fijo */
+
+.btn-success {
+    --bs-btn-bg: #2e7d32;
+    --bs-btn-border-color: #2e7d32;
+    --bs-btn-hover-bg: #1b5e20;
+    --bs-btn-hover-border-color: #1b5e20;
+    --bs-btn-active-bg: #1b5e20;
+    --bs-btn-active-border-color: #1b5e20;
+}
+
+.hero { background: linear-gradient(135deg, #1b5e20, #2e7d32 60%, #43a047); }
+
+.video-card .card { transition: transform .2s; }
+.video-card:hover .card { transform: translateY(-3px); }
+
+/* Mensaje de error que inyecta el JS sobre el video */
+.video-error {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, .82);
+    color: #fff;
+    font-size: .85rem;
+    text-align: center;
+}
